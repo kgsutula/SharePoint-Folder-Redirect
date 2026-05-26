@@ -1,0 +1,46 @@
+Required values:
+
+$siteId
+$webId
+$listId
+$webUrl
+$webTitle
+
+Steps:
+
+1. Open the SharePoint document library in Microsoft Edge or Google Chrome.
+
+2. Press F12 to open Developer Tools.
+
+3. Go to the Network tab.
+
+4. Make sure network recording is enabled.
+
+5. Click the Sync button in SharePoint.
+
+6. When prompted, allow the browser to open Microsoft OneDrive.
+
+7. In the Network tab, search for:
+
+   odopen
+
+8. Find the request that starts with:
+
+   odopen://sync/?
+
+9. Copy the full odopen:// URL.
+
+10. Pull the needed values from that URL and place them into the script.
+
+Example placeholder values:
+
+$siteId = "{SITE-ID-GUID}"
+$webId  = "{WEB-ID-GUID}"
+$listId = "{LIST-ID-GUID}"
+
+$webUrl = "https://yourtenant.sharepoint.com/sites/YourSiteName"
+$webTitle = "Your Site Title"
+
+Example odopen format:
+
+odopen://sync/?siteId={SITE-ID-GUID}&webId={WEB-ID-GUID}&listId={LIST-ID-GUID}&webUrl=https://yourtenant.s
