@@ -41,6 +41,37 @@ $listId = "{LIST-ID-GUID}"
 $webUrl = "https://yourtenant.sharepoint.com/sites/YourSiteName"
 $webTitle = "Your Site Title"
 
-Example odopen format:
+Important:
 
-odopen://sync/?siteId={SITE-ID-GUID}&webId={WEB-ID-GUID}&listId={LIST-ID-GUID}&webUrl=https://yourtenant.s
+The values in the odopen:// URL are URL-encoded.
+
+For example:
+
+%2D = -
+
+This means a value such as:
+
+12345678%2D1234%2D1234%2D1234%2D123456789012
+
+Should be converted to:
+
+12345678-1234-1234-1234-123456789012
+
+You can either:
+- Leave the values URL-encoded if using the full odopen URL directly
+- Or replace the encoded values with normal characters when manually filling variables in the PowerShell script
+
+Common URL-encoded characters:
+
+%2D = -
+%20 = space
+%3A = :
+%2F = /
+
+Example:
+
+Encoded:
+Project%20Files
+
+Decoded:
+Project Files
