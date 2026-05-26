@@ -24,7 +24,7 @@ Fill in the SharePoint site name for the $webTitle variable.  This is the site n
 This whole setup is designed to look like a ShortCut for an end user.  Here are the steps you can do to set that up:
 
 1.  Un-Share you current shared folder that your SharePoint site is replacing. Share a new folder with the same share name as the old shared folder
-2. Copy the scripts folder to the new shared folder
+2. In the new shared folder, create a folder called, "scripts," and copy all the files there
 3. Create a shortcut to the vbs script
 4. Move the shortcut just one directory up from the scripts folder
 5. Right click the scripts folder, select properties and then select, "Hidden," in the general tab. This will hide the folder from the users
