@@ -5,7 +5,7 @@ function Start-SPSiteSync {
 
     $siteId = <SiteID from Odopen link goes here. Must be within {}>
     $webId  = <webID from Odopen link goes here. Must be within {}>
-    $listId = <ListID from Odopen link goes here. Must be within {}>
+    $listId = <ListID from Odopen link goes here>
 
     $webUrl = <SharePoint site URL goes here in quotes>
     $webTitle = <SharePoint site name goes here in quotes>
