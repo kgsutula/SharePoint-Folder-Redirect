@@ -6,6 +6,7 @@ $listId
 $webUrl
 $webTitle
 
+
 Steps:
 
 1. Open the SharePoint document library in Microsoft Edge or Google Chrome.
@@ -30,7 +31,7 @@ Steps:
 
 9. Copy the full odopen:// URL.
 
-10. Pull the needed values from that URL and place them into the script.
+10. Pull the needed values from that URL and place them into the script.  The script ODopen_extract.ps1 will extract these values for you
 
 Example placeholder values:
 
